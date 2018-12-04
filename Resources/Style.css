@@ -1,0 +1,123 @@
+ .site-title {
+  line-height: 1.5;
+  font-family: "Raleway",sans-serif;
+  font-size: 2.37rem;
+  font-weight: bold;
+ }
+
+ .site-title a:hover, .site-title a:active {
+    color: #22aadd;
+ }
+
+ .page-title, .entry-title {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #404040;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 40px;
+    font-size: 1.5rem;
+    font-family: "Raleway",sans-serif;
+ }
+
+ .entry-meta {
+    margin: 0.5em 0.2em 0;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-size: 0.81rem;
+ }
+
+ .entry-meta a:link,
+ .entry-meta a:visited {
+	margin: 0px 4px 0px 4px;
+	color: #aaa;
+ }
+
+ .entry-meta a:hover,
+ .entry-meta a:active {
+	margin: 0px 4px 0px 4px;
+	color: #777;
+ }
+
+ .copyright {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 0px 6px 0px 6px;
+ }
+
+ body {
+  margin: 0px 20px 20px 20px;
+ }
+
+ .wechat_thumbnail {
+  display: none;
+ }
+
+ div {
+  color: #404040;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: Ubuntu,Tahoma,Arial;
+  font-size: 1rem;
+ }
+
+ .box {
+  float: left;
+  position: relative;
+  width: 33%; /* desired width */
+ }
+
+ .box:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* initial ratio of 1:1*/
+ }
+
+ .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 1px;
+ }
+
+ .image-gallery figure {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+ }
+
+ .image-gallery figcaption {
+  display: none;
+ }
+
+/* We use div_image_center to show image as backgroud of the div but we still need the img inside the link */
+/* 'display: none' won't work because the image would appear from top-left of the browser when enlarged */
+/* set width and height to 0 and top left to 50% so the image would appear from the center of the block */
+ .image-gallery img {
+   width:0%;
+   height:0%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+ }
+
+/* show center part of the image https://codepen.io/chrisnager/pen/XJRRwo?editors=110 */
+/* Not used right now as mobil devices don't support it, use div_image_center instead
+ .image_center {
+  object-fit: cover
+ }
+*/
+
+ .div_image_center {    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width:100%;
+    height:100%;
+ }
